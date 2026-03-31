@@ -1,134 +1,134 @@
-# Body-Extension Toolkit
+# Embodied Ideation Toolkit
 
-*A proposal for self-construction.*
+**A two-phase embodied design method for expressive social robots — from phenomenological bodily exploration to robotic prototyping.**
 
----
-
-This is a catalog of wearable body extensions made from cardboard, cardboard tubes, and tape. Nothing else.
-
-The extensions are not costumes. They are instruments for disrupting habitual movement. By wearing them, a designer experiences — in their own body — the constraints, weight shifts, and altered geometries that a non-anthropomorphic robot would possess. The process of building them is as important as wearing them: cutting, folding, taping, and fitting a piece teaches you something about the structural logic of a body-shaped constraint that no written description can replace.
+This toolkit combines techniques from Augusto Boal's *Theatre of the Oppressed* with human–robot interaction (HRI) design, offering concrete guidance for integrating performance-based methods into robotic prototyping practice. It includes a **wearable body-extension toolkit** and a **modular robotic prototyping toolkit**, linked by a structured workshop methodology grounded in de-mechanisation exercises.
 
 ---
 
-## Influences
+## Overview
 
-**Enzo Mari, *Autoprogettazione?* (1974)** — Mari published a catalog of 19 furniture designs that anyone could build from rough boards and nails. The designs were numbered, drawn simply, and offered as exercises in understanding structure through making. The finished object mattered less than what you learned by building it. Mari invited people to change the designs — but to build the original first, so they understood what they were changing. This catalog follows the same principle: a constrained material vocabulary, numbered designs, an invitation to modify, and the belief that construction is a form of thinking.
+Performing arts expertise is valuable in social robot design, yet HRI designers often lack actionable ways to bring embodied, performance-based thinking into their workflow. This toolkit addresses that gap through two complementary phases:
 
-**LEGO building instructions** — LEGO manuals are almost wordless. Each step adds a small number of new pieces to the assembly. New pieces are shown separately before being placed. The drawing does the work; text is minimal. Sub-assemblies are built on their own, then joined to the main structure. Our step-by-step assembly guides follow this visual logic: every step is one action, shown in a drawing, with new parts identified before they are attached.
+| Phase | Focus | Toolkit |
+|-------|-------|---------|
+| **Phase 1 — Bodily Exploration** | Break habitual movement patterns; discover expressive qualities through the body | Wearable body-extension toolkit |
+| **Phase 2 — Robotic Prototyping** | Translate embodied insights into robotic movement prototypes | Modular robotic prototyping toolkit |
 
-The combination: Mari's philosophy of honest construction through constrained materials, delivered through LEGO's visual, step-by-step, parts-first assembly language.
-
----
-
-## Materials
-
-All designs use the same three materials. See [`materials.md`](materials.md) for full specifications and preparation techniques.
-
-| Material | Role |
-|----------|------|
-| Corrugated cardboard (single- and double-wall) | Structure, surfaces, enclosures |
-| Cardboard tubes (various diameters) | Handles, extensions, structural members |
-| Packing tape / masking tape | Joining, edge protection, strap attachment |
+A workshop format, tested around the design constraint of an **emotionally expressive two-cuboid robot**, ties the two phases together and is documented in full in this repository.
 
 ---
 
-## Catalog
+## Repository Structure
 
-Each design has a number, a body region, and a short name.
-
-Designs within the same body region are **variations** — they alter different aspects of how that region moves and is perceived. They are not progressive (you do not need to build H1 before building H2). Choose the one that interests you, or build all three and compare.
-
-### Head
-
-| # | Name | What it changes |
-|---|------|-----------------|
-| [H1](head/H1.md) | *to be named* | *to be described* |
-| [H2](head/H2.md) | *to be named* | *to be described* |
-| [H3](head/H3.md) | *to be named* | *to be described* |
-
-### Torso
-
-| # | Name | What it changes |
-|---|------|-----------------|
-| [T1](torso/T1.md) | *to be named* | *to be described* |
-| [T2](torso/T2.md) | *to be named* | *to be described* |
-| [T3](torso/T3.md) | *to be named* | *to be described* |
-
-### Arms
-
-| # | Name | What it changes |
-|---|------|-----------------|
-| [A1](arms/A1.md) | *to be named* | *to be described* |
-| [A2](arms/A2.md) | *to be named* | *to be described* |
-| [A3](arms/A3.md) | *to be named* | *to be described* |
-
----
-
-## How to Read a Design Guide
-
-Every guide follows the same format. This is intentional — once you have built one, you know how to build any of them.
-
-### 1. Overview
-
-The design number, name, and a one-line description of what it does to the wearer's movement.
-
-### 2. Parts required
-
-A visual inventory of every piece needed, with quantities and dimensions — like the parts list at the start of a LEGO booklet. **Cut and lay out all parts before you begin assembly.** This step is not optional: having everything ready makes the build faster and helps you understand the structure before you start taping.
-
-### 3. Step-by-step assembly
-
-Each step is **one action**: attach one piece to another, fold along a score line, wrap tape around a joint. New pieces entering the assembly at each step are identified clearly. Steps are numbered and accompanied by a drawing or photograph. Text is minimal — the image carries the information; words only clarify what the image cannot.
-
-**Sub-assemblies** are built separately, then joined. A step that says "build sub-assembly B" has its own mini-sequence, just as a LEGO booklet builds a small component in an inset before attaching it to the main model.
-
-### 4. Fit and adjust
-
-How to put the extension on, check fit, and adjust. Dimensions in the parts list are starting points — bodies vary. Trim or extend as needed.
-
-### 5. Movement notes
-
-What the extension does to the wearer's body schema: which movements it constrains, which it amplifies, which new movement qualities it tends to produce. These notes are observations, not rules — your experience may differ.
-
-### 6. Design bridge
-
-How the embodied experience of wearing this extension connects to robotic prototyping decisions. Which servo parameters, degrees of freedom, or movement qualities does this extension help a designer think about?
+```
+embodied-ideation-toolkit/
+│
+├── wearables/                    # Phase 1 — Body-extension catalog
+│   ├── head/                     # H1, H2, H3 — head extensions
+│   ├── torso/                    # T1, T2, T3 — torso extensions
+│   ├── arms/                     # A1, A2, A3 — arm extensions
+│   ├── drawings/                 # Technical drawings, step photos, worn photos
+│   ├── materials.md              # Shared parts inventory
+│   ├── combinations.md           # Multi-region configurations
+│   └── TEMPLATE.md               # Guide format for new designs
+│
+├── robotics/                     # Phase 2 — Modular robotic prototyping toolkit
+│   ├── firmware/                 # Arduino sketches
+│   ├── hardware/                 # CAD files, schematics, BOMs
+│   └── assembly/                 # Assembly instructions
+│
+├── methodology/                  # Workshop design & facilitation
+│   ├── workshop-plans/           # Session outlines and timings
+│   ├── exercises/                # Individual exercise descriptions
+│   └── templates/                # Observation sheets, reflection prompts
+│
+├── performance/                  # Performance-based exercises
+│   ├── warm-ups/                 # Preparatory bodily warm-ups
+│   ├── de-mechanisation/         # Boal-derived de-mechanisation exercises
+│   └── movement-exploration/     # Non-anthropomorphic movement tasks
+│
+└── docs/                         # Supplementary documentation
+    └── images/                   # Photos, diagrams, figures
+```
 
 ---
 
-## Combinations
+## Getting Started
 
-Pieces from different body regions can be worn together. See [`combinations.md`](combinations.md) for tested configurations and their combined effects on movement.
+### 1. Read the methodology
 
----
+Start with [`methodology/workshop-plans/`](methodology/workshop-plans/) for an overview of how the two phases connect, then review the individual exercises in [`performance/`](performance/).
 
-## Modify
+### 2. Build the wearables
 
-You are expected to change these designs. But **build the original first**, so you understand the structural logic before you alter it. Then change a dimension, add a tube, remove a panel, combine two designs. Rebuild. Compare. Send photographs to the project repository.
+The body-extension catalog in [`wearables/`](wearables/) contains 9 numbered designs across three body regions (head, torso, arms), each with step-by-step assembly guides inspired by LEGO's visual, parts-first instruction format. All designs use the same three materials — cardboard, cardboard tubes, and tape — following the constrained-materials philosophy of Enzo Mari's *Autoprogettazione?* (1974). See [`wearables/materials.md`](wearables/materials.md) for specifications.
 
----
+### 3. Assemble the robotic prototyping kit
 
-## Safety
+Hardware designs, firmware, and assembly guides live in [`robotics/`](robotics/). The default configuration targets a two-cuboid form factor, but the modular design supports other geometries.
 
-Every extension must satisfy these conditions. They are not negotiable.
+### 4. Run a workshop
 
-1. The wearer can **breathe freely** at all times.
-2. The wearer's **vision is not obstructed**. Head pieces frame but do not cover the eyes.
-3. The wearer can **remove the extension unassisted** within 5 seconds.
-4. All cut cardboard edges are **taped over** — no exposed corrugation or sharp corners.
-5. A **spotter** is present during all movement exploration.
-
-If any condition is not met, stop and fix the piece before continuing.
+Use the session plans and facilitation templates in [`methodology/`](methodology/) to run your own embodied ideation workshop.
 
 ---
 
-## Drawings
+## Key Concepts
 
-Place original drawing files, scans, and photographs in [`drawings/`](drawings/), named to match their design number:
+- **De-mechanisation** — Drawn from Augusto Boal's *Theatre of the Oppressed*: playful movement exercises that disrupt habitual bodily patterns, opening space for imaginative exploration of non-anthropomorphic robotic forms and movement.
+- **Embodied ideation** — A design approach in which bodily experience is the primary generative medium, not just an afterthought applied to screen-based sketches.
+- **Two-cuboid constraint** — A deliberately minimal robot configuration used as a design constraint to focus attention on *movement qualities* rather than morphological complexity.
 
-| File | Convention |
-|------|-----------|
-| Technical drawing | `H1-drawing.svg` or `H1-drawing.jpg` |
-| Parts layout photo | `H1-parts.jpg` |
-| Assembly step photo | `H1-step-03.jpg` |
-| Worn / in-use photo | `H1-worn.jpg` |
+---
+
+## Requirements
+
+### Wearables
+- Corrugated cardboard (single- and double-wall) — shipping boxes, packaging
+- Cardboard tubes (various diameters) — cling film cores, postal tubes, kitchen roll cores
+- Packing tape and masking tape
+- Craft knife, metal ruler, scissors, cutting mat
+
+### Robotics
+- Arduino-compatible microcontroller (e.g. Arduino Uno, ESP32)
+- Servo motors (specific models listed in hardware BOM)
+- 3D printer or laser cutter (optional — cardboard alternatives provided)
+- USB cable and computer with Arduino IDE
+
+### Workshop
+- Open floor space (minimum ~4 × 4 m per group)
+- Facilitator familiar with the methodology
+- 4–8 participants per session (recommended)
+
+---
+
+## Contributing
+
+Contributions are welcome — whether you are adapting the toolkit for a new robot morphology, translating workshop materials, adding new performance exercises, or improving the hardware designs.
+
+Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
+
+---
+
+## Citation
+
+If you use this toolkit in your research, please cite:
+
+```bibtex
+@inproceedings{embodied-ideation-toolkit,
+  title     = {From De-mechanisation to Robotic Prototyping: A Two-Phase Embodied Ideation Toolkit for Expressive Social Robots},
+  author    = {TODO: authors},
+  booktitle = {TODO: venue},
+  year      = {TODO: year},
+  doi       = {TODO: doi}
+}
+```
+
+*(Update the fields above once the paper is published.)*
+
+---
+
+## License
+
+This project is released under the [MIT License](LICENSE) for code and firmware, and [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) for documentation, fabrication guides, and workshop materials.
